@@ -1,8 +1,8 @@
 name: my first action
-on: [pull_request]
+on: [push]
 jobs:
      print-hello:
-          runs-on:ubuntu-latest
+          runs-on: ubuntu-latest
           steps:
-              - run:echo "hello world"
-              - run:echo "Thank you"
+              - run: echo "hello world"
+              - run: echo "Thank you"
